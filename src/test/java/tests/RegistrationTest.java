@@ -7,7 +7,7 @@ import org.testng.xml.dom.ParentSetter;
 
 import static tests.TestBase.app;
 
-public class RegistrationTest extends  {
+public class RegistrationTest extends TestBase {
 
 
     @BeforeMethod
@@ -18,10 +18,10 @@ public class RegistrationTest extends  {
     @Test
     public void registrationTest() {
 
-        int i = (int)((System.currentTimeMillis()/1000)%3600);
+        int i = (int) ((System.currentTimeMillis() / 1000) % 3600);
 
         app.userHelper().openRegistrationForm();
-        app.userHelper().fillRegistrationForm("And","Sh","qwerty"+i+"@ru.ru","AaSsDd123*$!");
+        app.userHelper().fillRegistrationForm("And", "Sh", "qwerty" + i + "@ru.ru", "AaSs" + i + "23*$!");
         app.userHelper().checkPolicy();
         app.userHelper().submitForm();
     }
