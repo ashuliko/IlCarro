@@ -174,4 +174,27 @@ public class Car {
     public String getAbout() {
         return about;
     }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "address='" + address + '\'' +
+                ", make='" + make + '\'' +
+                ", model='" + model + '\'' +
+                ", year='" + year + '\'' +
+                ", engine='" + engine + '\'' +
+                ", fuel='" + fuel + '\'' +
+                ", gear='" + gear + '\'' +
+                ", wD='" + wD + '\'' +
+                ", doors='" + doors + '\'' +
+                ", seats='" + seats + '\'' +
+                ", clasS='" + clasS + '\'' +
+                ", fuelConsumption='" + fuelConsumption + '\'' +
+                ", carRegNumber='" + carRegNumber + '\'' +
+                ", price='" + price + '\'' +
+                ", distanceIncluded='" + distanceIncluded + '\'' +
+                ", typeFeature='" + typeFeature + '\'' +
+                ", about='" + about + '\'' +
+                '}';
+    }
 }
